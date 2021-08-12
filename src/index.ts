@@ -1,18 +1,20 @@
-import { Sorter } from "./Sorter";
+
 
 import { NumbersCollection } from "./NumbersCollection";
 import { CharactersCollection } from "./CharactersCollection";
 import { LinkedList } from "./LinkedList";
 
+// Sort Array of numbers
 const numbersCollection = new NumbersCollection([10, 3, -5, 50])
-const numSorter = new Sorter(numbersCollection)
-numSorter.sort();
+numbersCollection.sort();
 console.log(numbersCollection.data)
 
+// Sort String
 const charactersCollection = new CharactersCollection('XYaayb');
-const stringSorter = new Sorter(charactersCollection)
-stringSorter.sort()
+charactersCollection.sort()
 console.log(charactersCollection.data)
+
+// Sort a link list 
 
 const linklist = new LinkedList();
 linklist.add(5);
@@ -20,6 +22,6 @@ linklist.add(7);
 linklist.add(1);
 linklist.add(0);
 linklist.add(9);
-const listSorter = new Sorter(linklist);
-listSorter.sort();
+
+linklist.sort();
 linklist.print();
